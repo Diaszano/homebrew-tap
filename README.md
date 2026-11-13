@@ -25,6 +25,7 @@ brew install bearm
 | Package | Type | Description | Upstream |
 | :--- | :--- | :--- | :--- |
 | `bearm` | Cask | Safe native replacement for Unix `rm` with restore support | [Diaszano/bearm](https://github.com/Diaszano/bearm) |
+| `gdocker` | Cask | Native macOS Docker GUI with a built-in MCP server for AI clients | [Diaszano/gdocker](https://github.com/Diaszano/gdocker) |
 
 ## Updating
 
