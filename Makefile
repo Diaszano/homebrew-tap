@@ -19,16 +19,17 @@ hooks:
 check-commits:
 	@sh ./scripts/verify-commits.sh origin/main HEAD
 
+# shortcut: audits the installed tap clone, not this working copy; symlink `brew --repository diaszano/tap` here to audit local edits.
 audit:
 	@if command -v brew >/dev/null 2>&1; then \
-		brew audit --cask Casks/*; \
+		brew audit --tap diaszano/tap; \
 	else \
 		echo "Homebrew not found in PATH; skipping audit."; \
 	fi
 
 style:
 	@if command -v brew >/dev/null 2>&1; then \
-		brew style Casks/*; \
+		brew style Casks/* Formula/*; \
 	else \
 		echo "Homebrew not found in PATH; skipping style check."; \
 	fi
