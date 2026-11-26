@@ -22,13 +22,14 @@ check-commits:
 audit:
 	@if command -v brew >/dev/null 2>&1; then \
 		brew audit --cask Casks/*; \
+		brew audit --formula Formula/*; \
 	else \
 		echo "Homebrew not found in PATH; skipping audit."; \
 	fi
 
 style:
 	@if command -v brew >/dev/null 2>&1; then \
-		brew style Casks/*; \
+		brew style Casks/* Formula/*; \
 	else \
 		echo "Homebrew not found in PATH; skipping style check."; \
 	fi
