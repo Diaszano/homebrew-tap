@@ -2,8 +2,8 @@
 class McpServerMacosUse < Formula
   desc "MCP server that lets AI agents control macOS apps through accessibility APIs"
   homepage "https://github.com/Diaszano/mcp-server-macos-use"
-  url "https://github.com/Diaszano/mcp-server-macos-use/releases/download/v0.1.19/mcp-server-macos-use-0.1.19.tar.gz"
-  sha256 "3a92cb71c6135319285716a2597909c1095719b46b1e1991cbfdbb2240407140"
+  url "https://github.com/Diaszano/mcp-server-macos-use/releases/download/v0.1.20/mcp-server-macos-use-0.1.20.tar.gz"
+  sha256 "2b3c49abb01c710826e0244801a5b73e69a7b41d458730a60322cdfc5ca43555"
   license "MIT"
 
   livecheck do
